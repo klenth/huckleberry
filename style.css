@@ -7,6 +7,63 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 16pt;
+  height: 100%;
 }
 
 /* Add styles here! */
+
+body {
+  --content-width: 600px;
+  --default-padding: 16px;
+}
+
+.max-width-wrapper {
+  padding: 0 32px;
+}
+
+.intro-chunk {
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18pt;
+  padding: var(--default-padding);
+}
+
+.title {
+  margin-bottom: 64px;
+}
+
+main {
+  border-top-color: #666666;
+  border-top-style: solid;
+  border-top-width: 8px;
+  background-color: #999999;
+  height: 100%;
+}
+
+.card {
+  background-color: white;
+  padding: var(--default-padding);
+  margin-top: 64px;
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.indented-heading {
+  background-color: #f4c142;
+  padding: 32px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: -32px;
+  margin-top: -8px;
+  border-bottom-color: #c39a33;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+}
+
+strong {
+  color: #48966a;
+  font-weight: 900;
+}
