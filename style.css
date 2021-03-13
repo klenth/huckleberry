@@ -7,15 +7,24 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 16pt;
   height: 100%;
 }
 
-/* Add styles here! */
-
 body {
-  --content-width: 600px;
+  --intro-width: 500px;
+  --content-width: 750px;
   --default-padding: 16px;
+
+  /* colors */
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+  --color-white: hsl(0deg, 0%, 100%);
+  --color-gray-light: hsl(0deg, 0%, 60%);
+  --color-gray-medium: hsl(0deg, 0%, 40%);
+  --color-gray-dark: hsl(0deg, 0%, 30%);
+  --color-gray-very-dark: hsl(0deg, 0%, 10%);
+  --color-black: hsl(0deg, 0%, 0%);
 }
 
 .max-width-wrapper {
@@ -23,47 +32,59 @@ body {
 }
 
 .intro-chunk {
-  max-width: var(--content-width);
   margin-left: auto;
   margin-right: auto;
-  font-size: 18pt;
+  max-width: var(--content-width);
   padding: var(--default-padding);
+
+  font-size: 1.5rem;
+}
+
+.intro-chunk > p {
+  max-width: var(--intro-width);
 }
 
 .title {
   margin-bottom: 64px;
+
+  font-size: 2rem;
 }
 
 main {
-  border-top-color: #666666;
+  height: 100%;
+  border-top-color: var(--color-gray-medium);
   border-top-style: solid;
   border-top-width: 8px;
-  background-color: #999999;
-  height: 100%;
+
+  background-color: var(--color-gray-light);
+  font-size: 1.25rem;
 }
 
 .card {
-  background-color: white;
-  padding: var(--default-padding);
   margin-top: 64px;
-  max-width: var(--content-width);
   margin-left: auto;
   margin-right: auto;
+  max-width: var(--content-width);
+  padding: var(--default-padding);
+
+  background-color: var(--color-white);
 }
 
 .indented-heading {
-  background-color: #f4c142;
-  padding: 32px;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-left: -32px;
   margin-top: -8px;
-  border-bottom-color: #c39a33;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom-color: var(--color-secondary-dark);
   border-bottom-style: solid;
   border-bottom-width: 8px;
+  padding: 32px;
+
+  background-color: var(--color-secondary-light);
+  font-size: 1.5rem;
 }
 
 strong {
-  color: #48966a;
+  color: var(--color-primary);
   font-weight: 900;
 }

@@ -1,5 +1,14 @@
 # Huckleberry Agency Website
 
+## Implementation notes (Kathy)
+More or less done; it isn't pixel-by-pixel perfect to the reference, but it's close enough (would take a binary search on box dimensions to make it match perfectly). It looks correct on various form factors, the colors match, alignment is right, etc.
+
+The only "cheating" I did was using CSS variables (mostly for the colors).
+
+The original assignment text follows.
+
+---
+
 In this workshop, you'll build a minimal landing page for an agency.
 
 This mockup is built entirely using _flow layout_: no Flexbox, no grid, no absolute positioning. It relies heavily on padding, margin, and border.
